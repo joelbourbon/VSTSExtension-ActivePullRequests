@@ -65,7 +65,7 @@ export class App extends React.Component<{}, AppState> {
         <Header title="All Repositories"
           titleSize={TitleSize.Large}
           commandBarItems={[]} />
-        <TabBar selectedTabId={this.state.selectedTabId} onSelectedTabChanged={this.onSelectedTabChanged} renderAdditionalContent={this.renderTabBarCommands}>
+        <TabBar onSelectedTabChanged={this.onSelectedTabChanged} renderAdditionalContent={this.renderTabBarCommands}>
           <Tab id={TabType.active} name="Active Pull Requests" badgeCount={this.state.activePrBadge} />
           <Tab id={TabType.drafts} name="My Drafts" badgeCount={this.state.draftPrBadge} />
         </TabBar>
